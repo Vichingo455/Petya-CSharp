@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // Le informazioni generali relative a un assembly sono controllate dal seguente 
 // set di attributi. Modificare i valori di questi attributi per modificare le informazioni
 // associate a un assembly.
-[assembly: AssemblyTitle("Protegent repack by unknown")]
-[assembly: AssemblyDescription("Protegent repack by unknown")]
+[assembly: AssemblyTitle("Petya")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("WinRepack")]
-[assembly: AssemblyProduct("Protegent")]
-[assembly: AssemblyCopyright("Copyright ©️ 2022")]
-[assembly: AssemblyTrademark("WinRepack")]
+[assembly: AssemblyCompany("Vichingo455")]
+[assembly: AssemblyProduct("Petya")]
+[assembly: AssemblyCopyright("Copyright © Vichingo455 2022")]
+[assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 // Se si imposta ComVisible su false, i tipi in questo assembly non saranno visibili 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Se il progetto viene esposto a COM, il GUID seguente verrà utilizzato come ID della libreria dei tipi
-[assembly: Guid("527a4452-14e1-4d5a-95c3-4f62ec262d14")]
+[assembly: Guid("3d558a7f-4e1c-4bb0-89d7-545ad20fb5bd")]
 
 // Le informazioni sulla versione di un assembly sono costituite dai seguenti quattro valori:
 //

