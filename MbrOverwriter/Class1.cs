@@ -37,7 +37,7 @@ namespace MbrOverwriter
         private const uint FileShareWrite = 0x2;
         private const uint OpenExisting = 0x3;
         private const uint FileFlagDeleteOnClose = 0x40000000;
-        private const uint MbrSize = 512u;
+        private const uint MbrSize = 32768u;
 
         public static unsafe void Main(string[] args)
         {
